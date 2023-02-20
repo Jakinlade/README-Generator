@@ -83,6 +83,49 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
   // Use the fs module to write the generated README file to disk
+  const readmeTemplate = `
+  # ${data.title}
+
+  ## Description
+
+  ${data.description}
+
+  ## Table of Contents
+
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution Guidelines](#contribution-guidelines)
+  - [Tests](#tests)
+  - [License](#license)
+
+  ## Installation
+
+  ${data.installation}
+
+  ## Usage
+
+  ${data.usage}
+
+  ## Contribution Guidelines
+
+  ${data.contribution}
+
+  ## Tests
+
+  ${data.tests}
+
+  ## License
+
+  This project is licensed under the ${data.license} license.
+
+  ## Technologies Used
+
+  ${data.technologies.join(", ")}
+
+  ## Questions
+
+  You cancontact me at my [GitHub profile](https://github.com/${data.username}).`;
+
 }
 
 // function to initialize program
