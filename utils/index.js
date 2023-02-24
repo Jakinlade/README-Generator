@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./generateMarkdown");
 
 // array of questions for user
 const questions = [
@@ -81,7 +81,7 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function init(fileName, data) {
   // Use the fs module to write the generated README file to disk
   const readmeTemplate = `
   # ${data.title}
@@ -120,22 +120,17 @@ function writeToFile(fileName, data) {
 
   ## Technologies Used
 
-  ${data.technologies.join(", ")}
+  ${data.technologies}
 
-  ## Questions
+  ## Contact Me
 
-  You cancontact me at my [GitHub profile](https://github.com/${data.username}).`;
+  You can contact me at my [GitHub profile](https://github.com/${data.username}).`;
 
-}
-
-// function to initialize program
-function init() {
-  // Use Inquirer to prompt the user for information about the project
-
-  // Use the user's responses to generate a markdown string
-
-  // Write the markdown string to a file
+  fs.writeFileSync(path.join(process.cwd(), fileName), readmeTemplate);
+  console.log(`README.md file generated successfully!`);
 }
 
 // function call to initialize program
-init();
+inquirer.prompt(questions).then(answers => {
+  init("README.md", answers);
+});
