@@ -120,7 +120,7 @@ function init(fileName, data) {
 
   ## Technologies Used
 
-  ${data.technologies}
+  ${data.technologies.map(tech => `- ${tech}`).join("\n")}
 
   ## Contact Me
 
