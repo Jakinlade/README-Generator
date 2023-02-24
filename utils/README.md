@@ -1,9 +1,9 @@
 
-  # guys
+  # Meta-ReadMe Generator
 
   ## Description
 
-  cool stuffs
+  a Node.js programme that generates a README file form the users input
 
   ## Table of Contents
 
@@ -15,19 +15,19 @@
 
   ## Installation
 
-  jump
+  Download it, install your dependancies. In this case 'Inquirer' then your ready to go!
 
   ## Usage
 
-  be cool
+  navigate to the utils directory in your terminal. then type "node index.js" and hit enter. you will then be prompted to answer questions. these answers will populate your README file!
 
   ## Contribution Guidelines
 
-  do it
+  Sharing is caring
 
   ## Tests
 
-  test it
+  Poke it with a stick.
 
   ## License
 
@@ -35,8 +35,8 @@
 
   ## Technologies Used
 
-  HTML,JavaScript,React,Python
+  - JavaScript
 
-  ## Questions
+  ## Contact Me
 
-  You can contact me at my [GitHub profile](https://github.com/deds).
+  You can contact me at my [GitHub profile](https://github.com/Jakinlade).
