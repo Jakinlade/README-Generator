@@ -1,7 +1,7 @@
 # README-Generator
 
 ## Code repository:
-https://github.com/{your-username}/password-generator
+https://github.com/Jakinlade/README-Generator
 
 ## Description
 
