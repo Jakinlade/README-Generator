@@ -3,6 +3,9 @@
 ## Code repository:
 https://github.com/Jakinlade/README-Generator
 
+## Example Video
+https://drive.google.com/file/d/18asfObUvXNzNlxdHIS_X0gU4NtHRsY2b/view
+
 ## Description
 
 
